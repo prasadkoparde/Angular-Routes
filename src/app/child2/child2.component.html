@@ -1,0 +1,18 @@
+<div class="box">
+  <h3>Products</h3>
+  <table class="table-bordered table-dark">
+    <thead>
+      <th>Sr.No.</th>
+      <th>Product Name</th>
+      <th>Product Id</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of _products; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.id }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>User entered value in child component: {{ uname }}</p>

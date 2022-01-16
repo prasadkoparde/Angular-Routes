@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      Get data from child using subject:{{ uname | uppercase }}
+    </div>
+    <button class="btn btn-primary" (click)="onClickProNames()">
+      Produce Product Names only
+    </button>
+    <br />
+    <span>{{ value | uppercase }}</span>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let pro of proName">
+        {{ pro }}
+      </li>
+    </ul>
+  </div>
+</div>
+<hr />
+<div class="container">
+  <div class="col-4 offset-1">
+    <app-child
+      [boxColor]="'green'"
+      [placeHolderText]="'create User'"
+      [btnVal]="'Create Users'"
+    ></app-child>
+  </div>
+  <div class="col-4 offset-1">
+    <app-child
+      [boxColor]="'red'"
+      [placeHolderText]="'create Admin'"
+      [btnVal]="'Create Admin'"
+    ></app-child>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-child2></app-child2>
+  </div>
+</div>

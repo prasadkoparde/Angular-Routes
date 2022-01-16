@@ -1,0 +1,11 @@
+.greenBox {
+  background-color: hsl(91, 28%, 84%);
+  border: 2px solid hsl(91, 50%, 15%);
+}
+.redBox {
+  background-color: hsl(0, 28%, 74%);
+  border: 2px solid hsl(0, 20%, 10%);
+}
+.text-success {
+  color: green;
+}

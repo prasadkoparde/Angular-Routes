@@ -1,0 +1,17 @@
+<div
+  class="row"
+  [ngClass]="{ greenBox: boxColor == 'green', redBox: boxColor == 'red' }"
+>
+  <div class="col" [ngClass]="{ 'text-success': 1 > 2 }">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="{{ placeHolderText }}"
+      #userInput
+    />
+    <button class="btn btn-lg" (click)="sendUserName(userInput)">
+      {{ btnVal }}
+    </button>
+    <p class="text-success">Total Counts: 0</p>
+  </div>
+</div>
